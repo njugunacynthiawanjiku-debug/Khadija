@@ -21,4 +21,19 @@ nav {
 .nav-link {
   color: #6a0dad;
 }
-
+nav {
+  dislpay: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  border: 2px solid black;
+  margin: 50px;
+}
+@media (max-width: 600px) {
+  body {
+  padding: 50px;
+}
+h1 {
+  font-size: 40px;
+  }
+}
