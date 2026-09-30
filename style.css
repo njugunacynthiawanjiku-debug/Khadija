@@ -31,10 +31,10 @@ nav {
 }
 @media (max-width: 600px) {
   body {
-  padding: 50px;
+  padding: 20px;
 }
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   }
 }
 .projects {
