@@ -37,3 +37,14 @@ h1 {
   font-size: 40px;
   }
 }
+.projects {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:20px;
+}
+
+@media (main-width: 768px) {
+  .projects {
+    grid-template-column: repeat(3, 1fr);
+  }
+}
