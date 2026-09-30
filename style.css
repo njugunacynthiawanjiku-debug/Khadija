@@ -1,4 +1,7 @@
-body {
+body 
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding:50px:
   background-color: lightblue;
 }
 h1 {
@@ -10,3 +13,9 @@ h1 {
 P {
   font-size:50px
 }
+nav {
+  padding:20px;
+  border:2px solid black;
+  margin:20px;
+}
+
