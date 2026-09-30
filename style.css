@@ -11,6 +11,7 @@ h1 {
 }
 P {
   font-size:50px;
+  line-height: 1.6;
 }
 nav {
   padding: 50px;
