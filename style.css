@@ -94,3 +94,7 @@ footer {
   background-color: var(--color-accent);
   color: var(--color-sand);
 }
+  nav a,
+nav a:visited {
+  color: var(--color-sand) !important;
+}
