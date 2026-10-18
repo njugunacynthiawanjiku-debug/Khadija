@@ -60,4 +60,37 @@ h4 { font-size: 1.953rem; }
 h5 { font-size: 1.563rem; }
 h6 { font-size: 1.25rem; }
 small { font-size: 0.8rem; }
+:root {
+  --color-primary: #D73130;
+  --color-dark: #753742;
+  --color-accent: #AA5042;
+  --color-sand: #D8BD8A;
+  --color-light: #D8D78F;
+}
 
+body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+h1, h2, h3 {
+  color: var(--color-primary);
+}
+
+nav {
+  background-color: var(--color-dark);
+  border-color: var(--color-accent);
+}
+
+nav a {
+  color: var(--color-sand);
+}
+
+nav a:hover {
+  color: var(--color-primary);
+}
+
+footer {
+  background-color: var(--color-accent);
+  color: var(--color-sand);
+}
