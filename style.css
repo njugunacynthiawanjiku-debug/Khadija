@@ -1,74 +1,19 @@
-body {
-  font-family:Arial,sans-serif;
-  text-align:center;
-  padding: 50px;
-  background-color:lightblue;
-}
-h1 {
-  color:red;
-  font-size: 40px;
-  font-weight:bold;
-}
-p {
-  font-size:50px;
-  line-height: 1.6;
-}
-nav {
-  padding: 50px;
-  border: 2px solid black;
-  margin: 50px;
-}
-.nav-link {
-  color: #6a0dad;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap:wrap;
-  padding: 50px;
-  border: 2px solid black;
-  margin: 50px;
-}
-@media (max-width: 600px) {
-  body {
-  padding: 20px;
-}
-h1 {
-  font-size: 30px;
-  }
-}
-.projects {
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap:20px;
+/* ===== Colors ===== */
+:root {
+  --color-primary: #0f5b4a;
+  --color-dark: #75974a;
+  --color-accent: #445042;
+  --color-sand: #d8d8d8;
+  --color-light: #d8d78f;
 }
 
-@media (min-width: 768px) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }body {
+/* ===== Base ===== */
+body {
   font-family: Inter, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-}
-]
-h1 { font-size: 3.815rem; }
-h2 { font-size: 3.052rem; }
-h3 { font-size: 2.441rem; }
-h4 { font-size: 1.953rem; }
-h5 { font-size: 1.563rem; }
-h6 { font-size: 1.25rem; }
-small { font-size: 0.8rem; }
-:root {
-  --color-primary: #D73130;
-  --color-dark: #753742;
-  --color-accent: #AA5042;
-  --color-sand: #D8BD8A;
-  --color-light: #D8D78F;
-}
-
-body {
+  text-align: center;
+  padding: 1rem;
   background-color: var(--color-light);
   color: var(--color-dark);
 }
@@ -77,24 +22,62 @@ h1, h2, h3 {
   color: var(--color-primary);
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: red;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ===== Navigation ===== */
 nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 1rem;
+  margin: 1rem;
   background-color: var(--color-dark);
-  border-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
 }
 
 nav a {
   color: var(--color-sand);
+  text-decoration: none;
 }
 
 nav a:hover {
   color: var(--color-primary);
 }
 
+nav a:visited {
+  color: var(--color-sand);
+}
+
+/* ===== Projects grid ===== */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 1.5rem;
+  margin: 1rem;
+  border: 2px solid black;
+}
+
+/* ===== Footer ===== */
 footer {
   background-color: var(--color-accent);
   color: var(--color-sand);
+  padding: 1rem;
 }
-  nav a,
-nav a:visited {
-  color: var(--color-sand) !important;
+
+/* ===== Larger screens ===== */
+@media (min-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
